@@ -1,9 +1,5 @@
 const Upi =
     require("../models/upiModel");
-
-
-// CREATE UPI
-
 exports.createUpi =
     async (req, res) => {
 
@@ -90,7 +86,7 @@ exports.getAllUpi =
     };
 
 
-// GET SINGLE UPI
+
 
 exports.getSingleUpi =
     async (req, res) => {

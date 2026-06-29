@@ -228,6 +228,7 @@ exports.getWallet = async (req, res) => {
                 transaction.type === "daily_checkin" ||
                 transaction.type === "spin" ||
                 transaction.type === "referral" ||
+                transaction.type === "reel_watch" ||
                 transaction.type === "bonus"
             ) {
 
@@ -289,7 +290,7 @@ exports.getWallet = async (req, res) => {
                     walletConfig?.rateCoins || 1000,
 
                 rateRupees:
-                    walletConfig?.rateRupees || 200,
+                    walletConfig?.rateRupees || 100,
 
                 withdrawEnabled:
                     walletConfig?.withdrawEnabled ?? true,
